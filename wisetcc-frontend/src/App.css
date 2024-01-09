@@ -15,12 +15,8 @@
   background-color: #FFE6D1;
   padding: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.logo img {
-  height: 40px;
 }
 
 .nav-wisetcc {
@@ -30,9 +26,11 @@
   margin: 0 20px;
 }
 
-.nav-links {
+.centered-links {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Occupy remaining space */
 }
 
 .nav-item {
@@ -49,6 +47,30 @@
 
 .nav-item:hover {
   text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #595959;
+  margin-left: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #4caf50;
+}
+
+.social-item {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #595959;
+  font-family: Georgia;
+  font-size: 12px;
 }
 
 .contactpage {
