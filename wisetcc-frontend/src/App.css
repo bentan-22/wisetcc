@@ -1,38 +1,145 @@
-.App {
+.headertext {
+  font-family: Georgia;
+  color: #595959;
+  font-size: 14px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bodytext {
+  font-family: Helvetica;
+  color: #595959;
+  font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #FFE6D1;
+  padding: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-wisetcc {
+  color: #595959;
+  font-family: Georgia;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #595959;
+  font-family: Georgia;
+  font-size: 12px;
+}
+
+.nav-item + .nav-item {
+  margin-left: 10px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.contactpage {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #595959;
+  font-size: 12px;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  min-width: 120px;
+  margin-right: 10px;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  width: 100%;
+}
+
+#salutation {
+  width: auto;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Helvetica;
+  color: #595959;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.3333% - 30px);
+  max-width: calc(33.3333% - 30px);
+  margin: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555;
 }
