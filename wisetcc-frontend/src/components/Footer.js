@@ -1,5 +1,8 @@
 import React from 'react';
+import '../App.css';
+import '../css/Footer.css';
 import wisetccLogo from '../assets/wisetcc_logo.png';
+import SubscribeForm from './SubscribeForm'; 
 
 const Footer = () => {
   return (
@@ -20,25 +23,7 @@ const Footer = () => {
           <p>Email: info@wisetcc.com</p>
         </div>
       </div>
-
-      <div className="subscribe-form">
-        <p>Join our mailing list below.</p>
-        <form>
-          <div className="form-group">
-          <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
-          </div>
-
-          <div className="form-group">
-          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
-          </div>
-
-          <div className="form-group">
-          <input type="email" id="email" name="email" placeholder="Email" required />
-          </div>
-
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
+      <SubscribeForm />
     </footer>
   );
 }

@@ -1,271 +1,78 @@
 /* General Styles */
 body, p, .bodytext, .contactpage {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia;
   color: #595959;
 }
 
-.headertext {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: Georgia;
-}
-
+.headertext,
 .headertext-no-shadow {
   display: flex;
   align-items: center;
+  font-family: Georgia;
+  font-size: 29px;
+  font-weight: normal;
+  letter-spacing: 0.14rem;
+}
+
+.headertext {
   justify-content: center;
+  color: #fff;
+}
+
+.headertext-no-shadow {
+  justify-content: center;
+  
+}
+
+.headertext-contact {
   color: #C55A11;
+  justify-content: left;
+}
+
+/* Background Images */
+.homepage-bg-img,
+.aboutpage-bg-img,
+.servicespage-bg-img,
+.contactpage-bg-img {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .homepage-bg-img {
   background-image: url('../src/assets/home_page.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
 
 .aboutpage-bg-img {
   background-image: url('../src/assets/about_page.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
 
 .servicespage-bg-img {
   background-image: url('../src/assets/services.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
 
 .contactpage-bg-img {
   background-image: url('../src/assets/contact_page.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-/* Navigation Styles */
-.navbar {
-  background-color: white;
-  padding: 15px;
-}
-
-.nav-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-item {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #595959;
-  font-family: Georgia;
-  font-size: 12px;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-}
-
-.wisetcc-logo {
-  width: 100px;
-  height: auto;
-}
-
-.social-icons {
-  margin-left: auto;
-}
-
-.social-icons a {
-  color: #595959;
-  margin: 0 10px;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #4caf50;
-}
-
-.social-item {
-  text-decoration: none;
-  color: #595959;
-  font-family: Georgia;
-  font-size: 12px;
-}
-
-/* Form Styles */
-form {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.form-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-label {
-  min-width: 120px;
-  margin-right: 10px;
-}
-
-input,
-select,
-textarea {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-  font-size: 12px;
-  width: 100%;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.contactpage-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact-details {
-  width: 40%;
-  padding: 20px;
-}
-
-.contact-form {
-  width: 50%;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
 }
 
 /* Container Styles */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 768px;
+  margin: auto;
+  padding: auto;
   font-family: Helvetica;
   color: #595959;
 }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  margin: -20px;
   align-items: center;
+  justify-content: center;
 }
 
 .col-md-4 {
-  flex: 0 0 calc(33.3333% - 50px);
-  max-width: calc(33.3333% - 50px);
+  flex: 0 0 calc(33.3333% - 30px);
+  max-width: calc(33.3333% - 30px);
   margin: 15px;
-}
-
-/* Card Styles */
-.card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.card-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  color: #555;
-}
-
-.card:nth-child(1) {
-  background-image: url('../src/assets/services_consultation.jpg');
-}
-
-.card:nth-child(2) {
-  background-image: url('../src/assets/services_temple_visits.jpeg');
-}
-
-.card:nth-child(3) {
-  background-image: url('../src/assets/services_events.jpeg');
-}
-
-.services-card {
-  background-size: cover;
-  background-position: center;
-}
-
-/* Subscribe Form Styles */
-.subscribe-form {
-  width: 60%;
-  margin: 20px auto 0;
-  padding: 20px;
-  text-align: center;
-}
-
-.subscribe-form input,
-.subscribe-form button {
-  margin-top: 10px;
-}
-
-/* Footer Styles */
-.footer-text {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ccc;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-section {
-  flex-basis: 30%;
-  text-align: left;
-}
-
-.middle-section {
-  flex-basis: 30%;
-  text-align: center;
-}
-
-.right-section {
-  flex-basis: 30%;
-  text-align: right;
 }

@@ -1,0 +1,61 @@
+/* Footer Styles */
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  font-family: Georgia;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+.middle-section {
+  text-align: center;
+}
+
+.right-section {
+  text-align: right;
+}
+
+/* Subscribe Form Styles */
+.subscribe-form {
+  width: 60%;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.subscribe-form-group {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form input,
+.subscribe-form button {
+  margin-top: 5px;
+  font-family: Helvetica;
+}
+
+.subscribe-form button {
+  margin: 0 auto;
+  margin-top: 20px;
+}
