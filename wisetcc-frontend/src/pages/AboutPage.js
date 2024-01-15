@@ -2,8 +2,8 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <div className="headertext">
-      <h1>About Us</h1>
+    <div className="aboutpage-bg-img">
+    <h1 className="headertext">About Us</h1>
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
+import '../App.css';
 
 function HomePage() {
   return (
-    <div className="headertext">
-          <h1>Welcome to WISETCC</h1>
+    <div className="homepage-bg-img">
     </div>
   );
 }
