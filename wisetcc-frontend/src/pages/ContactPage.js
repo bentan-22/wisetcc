@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import "../css/Forms.css";
+import "../css/ContactPage.css";
 import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => {
@@ -28,7 +28,9 @@ const ContactPage = () => {
             Random Address
           </p>
         </div>
+        <div className="contact-form">
         <ContactForm />
+        </div>
       </div>
     </div>
   );
