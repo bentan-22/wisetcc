@@ -9,8 +9,10 @@ import './App.css';
 import Footer from './components/Footer';
 
 function App() {
+  const isGitHubPages = window.location.hostname.includes('github.io');
+  const basename = isGitHubPages ? '/wisetcc' : '';
   return (
-    <Router>
+    <Router basename={basename}>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

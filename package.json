@@ -4,7 +4,8 @@
   },
   "scripts": {
     "predeploy": "cd wisetcc-frontend && npm run build",
-    "deploy": "gh-pages -d wisetcc-frontend/build"
+    "deploy": "gh-pages -b gh-pages -d wisetcc-frontend/build"
+
   },
   "homepage": "https://bentan-22.github.io/wisetcc"
 }
