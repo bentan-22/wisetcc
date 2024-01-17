@@ -2,9 +2,11 @@
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: #ffff;
   border-top: 1px solid #ccc;
   font-family: Georgia;
+  font-size: 16px; /* 12pt */
+  color: #595959;
 }
 
 .footer-content {
@@ -39,6 +41,7 @@
   margin: 20px auto 0;
   padding: 20px;
   text-align: center;
+  font-family: Georgia;
 }
 
 .subscribe-form form {
@@ -54,13 +57,17 @@
   justify-content: center;
 }
 
-.subscribe-form input,
-.subscribe-form button {
+.subscribe-form input {
   margin-top: 5px;
-  font-family: Helvetica;
+  font-family: Georgia;
+  width: 250px;
 }
 
 .subscribe-form button {
   margin: 0 auto;
   margin-top: 20px;
+  font-family: Georgia;
+  width: 120px;
+  background-color: #595959;
+  color: #ffff;
 }

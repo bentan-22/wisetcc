@@ -10,16 +10,18 @@ body, p, .bodytext, .contactpage {
   align-items: center;
   font-family: Georgia;
   font-size: 29px;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: 0.14rem;
 }
 
 .headertext {
-  justify-content: center;
+  margin: 10px 40px 30px 45px;
+  justify-content: left;
   color: #fff;
 }
 
 .headertext-no-shadow {
+  color: #C55A11;
   justify-content: center;
   
 }
@@ -34,6 +36,7 @@ body, p, .bodytext, .contactpage {
 .aboutpage-bg-img,
 .servicespage-bg-img,
 .contactpage-bg-img {
+  padding-top: 20px;
   background-size: cover;
   background-position: center;
   height: 100vh;

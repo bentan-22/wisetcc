@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <div>
       <div className="contactpage-bg-img">
-          <h1 className="headertext">CONTACT</h1>
+        <h1 className="headertext">CONTACT</h1>
       </div>
       <div className="contactpage-container">
         <div className="contact-details">
@@ -25,11 +25,16 @@ const ContactPage = () => {
             <br />
             Address:
             <br />
-            Random Address
+            91 Tanglin Road
+            <br />
+            #04-07 Tanglin Place
+            <br />
+            Singapore 247918
           </p>
         </div>
         <div className="contact-form">
-        <ContactForm />
+          {/* Ensure the ContactForm component is imported correctly */}
+          <ContactForm />
         </div>
       </div>
     </div>

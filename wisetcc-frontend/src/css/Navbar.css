@@ -1,63 +1,75 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 15px;
-  }
-  
-  .nav-section,
-  .nav-section-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-item,
-  .nav-item-home {
-    margin: 10px;
-    text-decoration: none;
-    color: #595959;
-    font-family: Georgia;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 0.14rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-item.active {
-    color: #C55A11;
-    font-weight: bold;
-  }
-  
-  .nav-item:hover {
-    text-decoration: underline;
-    color: #C55A11;
-  }
-  
-  .wisetcc-logo {
-    width: 150px;
-    margin-right: 310px;
-    height: auto;
-  }
-  
-  .social-icons {
-    display: flex;
-  }
-  
-  .social-icons a {
-    color: #595959;
-    margin: 0 10px;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #4caf50;
-  }
-  
-  .social-item {
-    text-decoration: none;
-    color: #595959;
-    font-family: Georgia;
-    font-size: 15px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-item,
+.nav-item-home {
+  margin: 0 30px;
+  text-decoration: none;
+  color: #595959;
+  font-family: Georgia;
+  font-size: 11px;
+  letter-spacing: 0.14rem;
+  transition: color 0.3s ease;
+}
+
+.nav-item.active {
+  color: #c55a11;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: #c55a11;
+}
+
+.wisetcc-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-right: 160px;
+}
+
+.book-appointment {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  margin-left: 10px;
+}
+
+.social-icons a {
+  color: #595959;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #4caf50;
+}
+
+.social-item {
+  text-decoration: none;
+  color: #595959;
+  font-family: Georgia;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.book-appointment,
+.social-icons {
+    margin: 0 5px;
+}

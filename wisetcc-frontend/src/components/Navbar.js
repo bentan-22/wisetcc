@@ -14,10 +14,13 @@ function Navbar() {
         <NavLink to="/services" className="nav-item">SERVICES</NavLink>
         <NavLink to="/contact" className="nav-item">CONTACT</NavLink>
       </div>
-      <div className="nav-section-center">
+      <div className="nav-section">
         <NavLink to="/">
           <img src={wisetccLogo} alt="WISETCC Logo" className="wisetcc-logo" />
         </NavLink>
+      </div>
+      <div className="book-appointment">
+        <NavLink to="/appointment" className="nav-item">BOOK AN APPOINTMENT</NavLink>
       </div>
       <div className="social-icons">
         <FaFacebook className="social-item" />
