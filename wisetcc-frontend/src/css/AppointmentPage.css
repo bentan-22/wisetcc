@@ -1,0 +1,53 @@
+.appointment-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-page-container .number-label {
+    margin-left: -140px;
+}
+
+.appointment-page-container .number-input {
+    margin-left: -145px;
+}
+
+.appointment-page-container .purpose-label {
+  margin-top: 10px;
+}
+
+.appointment-page-container button {
+    width: 120px;
+    text-wrap: wrap;
+}
+
+.calendar-time-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calendar-container,
+.time-slots-container {
+  width: 48%; /* Adjust the width as needed */
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between slots as needed */
+}
+
+.time-slot {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  background-color: #4caf50;
+  color: white;
+}
