@@ -45,6 +45,12 @@
   border: 1px solid #ccc;
   cursor: pointer;
   font-size: 12px;
+  text-align: center;
+}
+
+.time-slot.selected {
+  background-color: black;
+  color: white;
 }
 
 .react-calendar,

@@ -21,7 +21,7 @@ function generateTimeSlots() {
   const currentTime = new Date(startTime);
 
   while (currentTime < endTime) {
-    if (!(currentTime >= lunchStart && currentTime < lunchEnd)) {
+    if (currentTime.getHours() !== 12 && !(currentTime >= lunchStart && currentTime < lunchEnd)) {
       slots.push(
         currentTime.toLocaleTimeString([], {
           hour: "numeric",
