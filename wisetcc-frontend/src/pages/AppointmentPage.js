@@ -10,7 +10,7 @@ function generateTimeSlots() {
   startTime.setHours(9, 30);
 
   const endTime = new Date();
-  endTime.setHours(18, 0);
+  endTime.setHours(18, 30);
 
   const lunchStart = new Date();
   lunchStart.setHours(12);
