@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
+    "react-calendar": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-router": "^6.21.1",
@@ -23,7 +24,6 @@
     "deploy": "gh-pages -d build"
   },
   "homepage": "https://bentan-22.github.io/wisetcc",
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1"
   }
 }
