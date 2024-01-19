@@ -29,6 +29,8 @@ body, p, .bodytext, .contactpage {
 .headertext-contact {
   color: #C55A11;
   justify-content: left;
+  font-size: 29px;
+  font-weight: 100;
 }
 
 /* Background Images */

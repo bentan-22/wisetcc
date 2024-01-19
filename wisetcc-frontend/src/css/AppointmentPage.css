@@ -2,15 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+}
+
+.email-container {
+  margin-bottom: 20px;
 }
 
 .appointment-page-container label {
-  font-size: 14px;
+  font-size: 14px; /* 10.5pt */
 }
 
 .appointment-page-container button {
   width: 120px;
-  font-size: 14px;
+  font-size: 14px; /* 10.5pt */
   white-space: wrap;
   padding: 10px;
 }
@@ -19,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 .calendar-container,
@@ -44,7 +50,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px; /* 10.5pt */
   text-align: center;
 }
 
@@ -87,7 +93,7 @@
 .react-calendar__tile {
   color: black;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 14px; /* 10.5pt */
   padding: 8px;
 }
 
@@ -113,16 +119,24 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 16px; /* 12pt */
   color: black;
 }
 
 .react-calendar__month-view__weekdays {
-  font-size: 12px;
+  font-size: 12px; /* 9pt */
   font-weight: normal;
   text-transform: none;
 }
 
 .purpose-label {
   margin-top: 10px;
+}
+
+.purpose-container {
+  margin-bottom: 15px;
+}
+
+.message-container {
+  margin-bottom: 15px;
 }

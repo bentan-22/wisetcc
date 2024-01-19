@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: flex-end;
   margin: 30px;
+  margin-top: 20px
 }
 
 .card-body {
@@ -18,7 +19,7 @@
   margin-bottom: 5px;
   text-align: center;
   font-family: Georgia;
-  font-size: 32px;
+  font-size: 26px; /* 20pt */
   font-weight: normal;
 }
 

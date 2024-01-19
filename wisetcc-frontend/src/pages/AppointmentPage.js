@@ -95,7 +95,7 @@ function AppointmentPage() {
           </div>
         </div>
 
-        <div>
+        <div className="email-container">
           <label>Email&ensp;(required)</label>
           <input
             type="email"
@@ -106,7 +106,7 @@ function AppointmentPage() {
 
         <div className="phone-container">
           <div>
-            <label>Country</label>
+            <label>Country Code&ensp;(required)</label>
             <input
               className="country-input"
               type="text"
@@ -153,7 +153,7 @@ function AppointmentPage() {
           </div>
         </div>
 
-        <div>
+        <div className="purpose-container">
           <label className="purpose-label">Purpose of Consultation&ensp;(required)</label>
           <input
             type="text"
@@ -162,7 +162,7 @@ function AppointmentPage() {
           />
         </div>
 
-        <div>
+        <div className="message-container">
           <label>Message&ensp;(required)</label>
           <textarea
             value={message}

@@ -58,7 +58,7 @@ function ContactForm() {
           <p>Phone&ensp;(required)</p>
           <div className="phone-container">
             <div>
-              <label>Country</label>
+              <label>Country Code</label>
               <input
                 className="country-input"
                 type="text"
@@ -67,7 +67,7 @@ function ContactForm() {
               />
             </div>
             <div>
-              <label className="number-label">Number</label>
+              <label className="number-label">Phone Number</label>
               <input
                 className="number-input"
                 type="text"

@@ -25,18 +25,20 @@
 
 .nav-item.active {
   color: #c55a11;
+  font-weight: bold;
 }
 
 .nav-item:hover {
   text-decoration: underline;
   color: #c55a11;
+  font-weight: bold;
 }
 
 .wisetcc-logo {
   width: 150px;
   height: auto;
   display: block;
-  margin-right: 160px;
+  margin-right: 125px;
 }
 
 .book-appointment {

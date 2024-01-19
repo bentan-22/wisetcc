@@ -3,7 +3,7 @@
   display: flex;
   font-family: Georgia;
   color: #595959;
-  font-size: 16px;
+  font-size: 16px; /* 12pt */
 }
 
 .contact-details,
@@ -47,6 +47,8 @@ label {
 .name-container div,
 .phone-container div {
   flex: 1;
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 
 .email-label,
@@ -55,7 +57,7 @@ label {
 }
 
 .number-label {
-  margin-left: -100px;
+  margin-left: -83px;
 }
 
 .phone-container .country-input {
@@ -98,7 +100,8 @@ button {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  width: 120px;
+  width: 110px;
+  font-size: 16px; /* 12pt */
 }
 
 button:hover {
