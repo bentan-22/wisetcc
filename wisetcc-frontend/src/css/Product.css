@@ -1,7 +1,8 @@
 .product {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribute items along the main axis */
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -12,30 +13,43 @@
 
 .product-images img {
   width: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 .product-image-large {
   position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-left: 50px;
 }
 
-.product-image-large img {
-  max-width: 100%;
-  height: auto;
+.product-image-large .arrow {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .product-info {
-  flex: 1; /* Take up remaining space */
-  margin-left: 20px; /* Add margin to separate from the large image */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 20px;
+  margin-right: 230px;
 }
 
 .product-info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .product-info p {
-  margin: 5px 0;
+  margin: 30px 0;
+  font-size: 20px;
 }
 
 .product-info .arrows {
@@ -43,13 +57,17 @@
   align-items: center;
 }
 
-.product-info .arrow {
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
+.product .arrow {
+  background-color: white;
+  border: 2px solid black;
   color: black;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px;
+  font-size: 24px;
+  padding: 10px;
   border-radius: 50%;
-  margin: 0 10px; /* Add margin between arrows */
+  margin: 0 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -80,6 +80,7 @@ function AppointmentPage() {
           <div>
             <label>First Name&ensp;(required)</label>
             <input
+            className="firstname-input"
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
@@ -88,6 +89,7 @@ function AppointmentPage() {
           <div>
             <label>Last Name&ensp;(required)</label>
             <input
+            className="lastname-input"
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
