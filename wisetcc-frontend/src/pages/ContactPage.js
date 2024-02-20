@@ -6,7 +6,9 @@ import ContactForm from "../components/ContactForm";
 const ContactPage = () => {
   const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
-  console.log("API Key:", apiKey);
+  const address = encodeURIComponent("Tanglin Place");
+  
+  const addressUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${address}`;
 
   return (
     <div>
@@ -44,7 +46,7 @@ const ContactPage = () => {
               height="300"
               frameBorder="0"
               style={{ border: 0 }}
-              src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=91+Tanglin+Road+Singapore`}
+              src={addressUrl}
               allowFullScreen
             ></iframe>
           </div>
