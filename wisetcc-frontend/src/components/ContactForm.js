@@ -31,6 +31,7 @@ function ContactForm() {
             <div>
               <label>First Name</label>
               <input
+                className="firstname-input"
                 type="text"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -39,6 +40,7 @@ function ContactForm() {
             <div>
               <label>Last Name</label>
               <input
+                className="lastname-input"
                 type="text"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
@@ -47,7 +49,9 @@ function ContactForm() {
           </div>
 
           <div>
-            <label className="email-label" htmlFor="email">Email&ensp;(required)</label>
+            <label className="email-label" htmlFor="email">
+              Email&ensp;(required)
+            </label>
             <input
               type="email"
               value={email}
@@ -78,7 +82,9 @@ function ContactForm() {
           </div>
 
           <div>
-            <label className="message-label" htmlFor="message">Message&ensp;(required)</label>
+            <label className="message-label" htmlFor="message">
+              Message&ensp;(required)
+            </label>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}

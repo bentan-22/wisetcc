@@ -7,16 +7,16 @@ import "../css/AppointmentPage.css";
 function generateTimeSlots() {
   const slots = [];
   const startTime = new Date();
-  startTime.setHours(9, 30);
+  startTime.setHours(9, 0);
 
   const endTime = new Date();
-  endTime.setHours(18, 30);
+  endTime.setHours(18, 0);
 
   const lunchStart = new Date();
-  lunchStart.setHours(12);
+  lunchStart.setHours(12, 0);
 
   const lunchEnd = new Date();
-  lunchEnd.setHours(13, 30);
+  lunchEnd.setHours(13, 0);
 
   const currentTime = new Date(startTime);
 

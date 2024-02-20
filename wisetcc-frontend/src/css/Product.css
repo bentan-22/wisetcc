@@ -1,0 +1,23 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product-image {
+  margin-right: 20px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
