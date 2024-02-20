@@ -20,6 +20,9 @@ function Navbar() {
         </NavLink>
       </div>
       <div className="book-appointment">
+        <NavLink to="/products" className="nav-item">PRODUCTS</NavLink>
+      </div>
+      <div className="book-appointment">
         <NavLink to="/appointment" className="nav-item">BOOK APPOINTMENT</NavLink>
       </div>
       <div className="social-icons">
