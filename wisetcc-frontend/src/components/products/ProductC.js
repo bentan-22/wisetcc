@@ -1,17 +1,17 @@
 import React from 'react';
 import '../../css/Product.css';
-import productImageC from '../../assets/products/product-c.jpg';
+import productTestImage from '../../assets/products/product-test-image.JPG';
 
 const ProductC = () => {
   return (
     <div className="product">
       <div className="product-image">
-        <img src={productImageC} alt="Product C" />
+        <img src={productTestImage} alt="product test" />
       </div>
       <div className="product-info">
         <h2>Product C</h2>
-        <p>Description: This is a description of Product C.</p>
-        <p>Code: C</p>
+        <p>Description of Product C</p>
+        <p>Product code C</p>
         <p>Price: $10</p>
       </div>
     </div>

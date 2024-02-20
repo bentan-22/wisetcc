@@ -1,16 +1,32 @@
 .product {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Distribute items along the main axis */
   margin: 20px;
 }
 
-.product-image {
-  margin-right: 20px;
+.product-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-images img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.product-image-large {
+  position: relative;
+}
+
+.product-image-large img {
+  max-width: 100%;
+  height: auto;
 }
 
 .product-info {
-  flex: 1;
+  flex: 1; /* Take up remaining space */
+  margin-left: 20px; /* Add margin to separate from the large image */
 }
 
 .product-info h2 {
@@ -20,4 +36,20 @@
 
 .product-info p {
   margin: 5px 0;
+}
+
+.product-info .arrows {
+  display: flex;
+  align-items: center;
+}
+
+.product-info .arrow {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 0 10px; /* Add margin between arrows */
 }

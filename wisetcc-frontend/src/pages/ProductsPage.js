@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/ProductsPage.css';
-import productImageA from '../assets/products/product-a.jpg';
-import productImageB from '../assets/products/product-b.jpg';
-import productImageC from '../assets/products/product-c.jpg';
+import productTestImage from '../assets/products/product-test-image.JPG';
 
 const ProductsPage = () => {
   const products = [
-    { code: 'a', title: 'Product A', price: 10, image: productImageA },
-    { code: 'b', title: 'Product B', price: 20, image: productImageB },
-    { code: 'c', title: 'Product C', price: 30, image: productImageC }
+    { code: 'a', title: 'Product A', price: 10, image: productTestImage },
+    { code: 'b', title: 'Product B', price: 20, image: productTestImage },
+    { code: 'c', title: 'Product C', price: 30, image: productTestImage }
   ];
 
   return (
@@ -25,6 +23,7 @@ const ProductsPage = () => {
             <div className="product-info">
               <img src={product.image} alt={product.title} className="product-image" />
               <h3>{product.title}</h3>
+              <p>Product code: {product.code}</p>
               <p>Price: ${product.price}</p>
             </div>
           </Link>

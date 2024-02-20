@@ -85,3 +85,8 @@ label {
 .phone-container div:last-child {
   margin-right: 0;
 }
+
+.contact-form-container .email-label,
+.contact-form-container .message-label {
+  font-size: 16px;
+}
