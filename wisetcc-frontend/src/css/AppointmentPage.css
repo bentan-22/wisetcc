@@ -168,3 +168,10 @@
 .message-container {
   margin-bottom: 15px;
 }
+
+.booking-button {
+  margin-left: 360px;
+  background-color: #595959;
+  font-family: Georgia;
+  font-size: 15px;
+}

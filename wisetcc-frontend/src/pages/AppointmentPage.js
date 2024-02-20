@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { useLocation } from "react-router-dom";
 import "../App.css";
 import "../css/AppointmentPage.css";
 
@@ -21,7 +22,10 @@ function generateTimeSlots() {
   const currentTime = new Date(startTime);
 
   while (currentTime < endTime) {
-    if (currentTime.getHours() !== 12 && !(currentTime >= lunchStart && currentTime < lunchEnd)) {
+    if (
+      currentTime.getHours() !== 12 &&
+      !(currentTime >= lunchStart && currentTime < lunchEnd)
+    ) {
       slots.push(
         currentTime.toLocaleTimeString([], {
           hour: "numeric",
@@ -45,6 +49,18 @@ function AppointmentPage() {
   const [selectedTime, setSelectedTime] = useState(null);
   const [consultationPurpose, setConsultationPurpose] = useState("");
   const [message, setMessage] = useState("");
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const productName = searchParams.get("productName");
+    const productCode = searchParams.get("productCode");
+
+    if (productName && productCode) {
+      setConsultationPurpose(`Enquire about ${productName} (${productCode})`);
+    }
+  }, [location.search]);
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -80,7 +96,7 @@ function AppointmentPage() {
           <div>
             <label>First Name&ensp;(required)</label>
             <input
-            className="firstname-input"
+              className="firstname-input"
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
@@ -89,7 +105,7 @@ function AppointmentPage() {
           <div>
             <label>Last Name&ensp;(required)</label>
             <input
-            className="lastname-input"
+              className="lastname-input"
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
@@ -156,7 +172,9 @@ function AppointmentPage() {
         </div>
 
         <div className="purpose-container">
-          <label className="purpose-label">Purpose of Consultation&ensp;(required)</label>
+          <label className="purpose-label">
+            Purpose of Consultation&ensp;(required)
+          </label>
           <input
             type="text"
             value={consultationPurpose}
@@ -173,7 +191,9 @@ function AppointmentPage() {
         </div>
 
         <div>
-          <button type="submit">Book Appointment</button>
+          <button type="submit" className="booking-button">
+            Book Appointment
+          </button>
         </div>
       </form>
     </div>

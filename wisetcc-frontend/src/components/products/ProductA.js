@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../css/Product.css';
 import productTestImage from '../../assets/products/product-test-image.JPG';
 import productTestImageReverse from '../../assets/products/product-test-image-reverse.JPG';
@@ -17,6 +18,9 @@ const ProductA = () => {
     const newIndex = (selectedImageIndex + 1) % images.length;
     setSelectedImageIndex(newIndex);
   };
+
+  const productCode = 'A';
+  const productName = 'Product A';
 
   return (
     <div className="product">
@@ -40,6 +44,9 @@ const ProductA = () => {
         <p>Description of Product A</p>
         <p>Product code: A</p>
         <p>Price: $10</p>
+        <Link to={`/appointment?productName=${encodeURIComponent(productName)}&productCode=${productCode}`}>
+          <button className="enquire-button">Enquire</button>
+        </Link>
       </div>
     </div>
   );

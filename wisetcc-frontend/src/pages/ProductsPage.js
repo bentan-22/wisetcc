@@ -13,15 +13,15 @@ const ProductsPage = () => {
   return (
     <div className="products-page">
       <h2 className="headertext-no-shadow">Products</h2>
-      <div className="product-grid">
+      <div className="products-page-container">
         {products.map(product => (
           <Link
             key={product.code}
             to={`/products/product-${product.code}`}
-            className="product-tab"
+            className="products-page-tab"
           >
-            <div className="product-info">
-              <img src={product.image} alt={product.title} className="product-image" />
+            <div className="products-page-info">
+              <img src={product.image} alt={product.title} className="products-page-image" />
               <h3>{product.title}</h3>
               <p>Product code: {product.code}</p>
               <p>Price: ${product.price}</p>
