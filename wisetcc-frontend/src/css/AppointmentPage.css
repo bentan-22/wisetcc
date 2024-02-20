@@ -5,36 +5,61 @@
   margin: 10px;
 }
 
-.email-container {
+.appt-email-container {
   margin-bottom: 20px;
 }
 
-.email-container input,
+.appt-email-container input,
 .purpose-container input,
-.message-container textarea {
+.appt-message-container textarea {
   width: 100%;
 }
 
-.name-container label {
+.appt-name-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.appt-name-container > div {
+  width: 100%;
+}
+
+.appt-name-container label {
   margin-left: 0;
 }
 
-.name-container .firstname-input {
+.appt-name-container .appt-firstname-input {
   width: 380px;
   margin-right: 10px;
 }
 
-.name-container .lastname-input {
-  width: 450px;
+.appt-name-container .appt-lastname-input {
+  width: 430px;
+  margin-left: -2px;
 }
 
-.phone-container .country-input {
-  width: 200px;
-  margin-right: 1px;
+.appt-phone-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.phone-container .number-input {
-  width: 630px;
+.appt-phone-container > div {
+  width: 100%;
+}
+
+.appt-phone-container .appt-country-input {
+  width: 210px;
+}
+
+.appt-phone-container .appt-number-label {
+  margin-left: -180px;
+}
+
+.appt-phone-container .appt-number-input {
+  width: 600px;
+  margin-left: -180px;
 }
 
 .appointment-page-container label {
@@ -58,14 +83,6 @@
 .calendar-container,
 .time-slots-container {
   width: 48%;
-}
-
-.appointment-page-container .number-label {
-  margin-left: 10px;
-}
-
-.appointment-page-container .number-input {
-  margin-left: 10px;
 }
 
 .time-slots-grid {
@@ -165,11 +182,11 @@
   margin-bottom: 15px;
 }
 
-.message-container {
+.appt-message-container {
   margin-bottom: 15px;
 }
 
-.booking-button {
+.appt-booking-button {
   margin-left: 360px;
   background-color: #595959;
   font-family: Georgia;

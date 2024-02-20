@@ -92,11 +92,11 @@ function AppointmentPage() {
   return (
     <div className="appointment-page-container">
       <form onSubmit={handleFormSubmit}>
-        <div className="name-container">
+        <div className="appt-name-container">
           <div>
             <label>First Name&ensp;(required)</label>
             <input
-              className="firstname-input"
+              className="appt-firstname-input"
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
@@ -105,7 +105,7 @@ function AppointmentPage() {
           <div>
             <label>Last Name&ensp;(required)</label>
             <input
-              className="lastname-input"
+              className="appt-lastname-input"
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
@@ -113,7 +113,7 @@ function AppointmentPage() {
           </div>
         </div>
 
-        <div className="email-container">
+        <div className="appt-email-container">
           <label>Email&ensp;(required)</label>
           <input
             type="email"
@@ -122,20 +122,20 @@ function AppointmentPage() {
           />
         </div>
 
-        <div className="phone-container">
+        <div className="appt-phone-container">
           <div>
             <label>Country Code&ensp;(required)</label>
             <input
-              className="country-input"
+              className="appt-country-input"
               type="text"
               value={countryCode}
               onChange={(e) => setCountryCode(e.target.value)}
             />
           </div>
           <div>
-            <label className="number-label">Phone Number&ensp;(required)</label>
+            <label className="appt-number-label">Phone Number&ensp;(required)</label>
             <input
-              className="number-input"
+              className="appt-number-input"
               type="text"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
@@ -182,7 +182,7 @@ function AppointmentPage() {
           />
         </div>
 
-        <div className="message-container">
+        <div className="appt-message-container">
           <label>Message&ensp;(required)</label>
           <textarea
             value={message}
@@ -191,7 +191,7 @@ function AppointmentPage() {
         </div>
 
         <div>
-          <button type="submit" className="booking-button">
+          <button type="submit" className="appt-booking-button">
             Book Appointment
           </button>
         </div>
