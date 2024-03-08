@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-section">
-        <NavLink exact to="/" className="nav-item-home">HOME</NavLink>
+        <NavLink to="/" className="nav-item-home">HOME</NavLink>
         <NavLink to="/about" className="nav-item">ABOUT</NavLink>
         <NavLink to="/services" className="nav-item">SERVICES</NavLink>
         <NavLink to="/contact" className="nav-item">CONTACT</NavLink>

@@ -12,7 +12,7 @@ const ProductsPage = () => {
 
   return (
     <div className="products-page">
-      <h2 className="headertext-no-shadow">Products</h2>
+      <h2 className="headertext-no-shadow">PRODUCTS</h2>
       <div className="products-page-container">
         {products.map(product => (
           <Link

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { useLocation } from "react-router-dom";
+import axios from "axios";
 import "../App.css";
 import "../css/AppointmentPage.css";
 
@@ -49,6 +50,7 @@ function AppointmentPage() {
   const [selectedTime, setSelectedTime] = useState(null);
   const [consultationPurpose, setConsultationPurpose] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState(null);
 
   const location = useLocation();
 
@@ -72,25 +74,34 @@ function AppointmentPage() {
     setSelectedTime(time);
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    console.log("Appointment booked:", {
-      firstName,
-      lastName,
-      email,
-      countryCode,
-      phoneNumber,
-      selectedDate,
-      selectedTime,
-      consultationPurpose,
-      message,
-    });
+    try {
+      const appointmentData = {
+        firstName,
+        lastName,
+        email,
+        countryCode,
+        phoneNumber,
+        selectedDate,
+        selectedTime,
+        consultationPurpose,
+        message,
+      };
+      const url = "/api/appointments"; // Check if this URL matches the backend route
+      console.log("Sending POST request to:", url); // Log the URL
+      const response = await axios.post("/api/appointments", appointmentData);
+      console.log("Appointment booked:", response.data);
+    } catch (error) {
+      setError(error.message);
+    }
   };
 
   const timeSlots = generateTimeSlots();
 
   return (
     <div className="appointment-page-container">
+      {error && <div className="error-message">{error}</div>}
       <form onSubmit={handleFormSubmit}>
         <div className="appt-name-container">
           <div>
@@ -100,6 +111,7 @@ function AppointmentPage() {
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
+              required
             />
           </div>
           <div>
@@ -109,6 +121,7 @@ function AppointmentPage() {
               type="text"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
+              required
             />
           </div>
         </div>
@@ -119,6 +132,7 @@ function AppointmentPage() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
 
@@ -130,15 +144,19 @@ function AppointmentPage() {
               type="text"
               value={countryCode}
               onChange={(e) => setCountryCode(e.target.value)}
+              required
             />
           </div>
           <div>
-            <label className="appt-number-label">Phone Number&ensp;(required)</label>
+            <label className="appt-number-label">
+              Phone Number&ensp;(required)
+            </label>
             <input
               className="appt-number-input"
               type="text"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
+              required
             />
           </div>
         </div>
@@ -150,6 +168,7 @@ function AppointmentPage() {
               onChange={handleDateChange}
               value={selectedDate}
               minDate={new Date()}
+              required
             />
           </div>
 
@@ -163,6 +182,7 @@ function AppointmentPage() {
                     selectedTime === timeSlot ? "selected" : ""
                   }`}
                   onClick={() => handleTimeClick(timeSlot)}
+                  required
                 >
                   {timeSlot}
                 </div>
@@ -179,6 +199,7 @@ function AppointmentPage() {
             type="text"
             value={consultationPurpose}
             onChange={(e) => setConsultationPurpose(e.target.value)}
+            required
           />
         </div>
 
@@ -187,6 +208,7 @@ function AppointmentPage() {
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            required
           />
         </div>
 
