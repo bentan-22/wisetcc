@@ -90,8 +90,17 @@ function AppointmentPage() {
       };
       const url = "http://localhost:3003/api/appointments"; // Check if this URL matches the backend route
       console.log("Sending POST request to:", url); // Log the URL
-      const response = await axios.post("http://localhost:3003//api/appointments", appointmentData);
+      const response = await axios.post(
+        "http://localhost:3003/api/appointments",
+        appointmentData
+      );
       console.log("Appointment booked:", response.data);
+
+      // Send email notification
+      const emailNotificationUrl = "";
+      console.log("Sending email notification to:", emailNotificationUrl); // Log the URL
+      await axios.post(emailNotificationUrl, appointmentData);
+      console.log("Email notification sent successfully");
     } catch (error) {
       setError(error.message);
     }
