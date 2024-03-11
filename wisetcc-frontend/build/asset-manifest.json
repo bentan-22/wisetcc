@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wisetcc/static/css/main.55635c89.css",
+    "main.js": "/wisetcc/static/js/main.036d92d5.js",
+    "static/media/home_page.jpg": "/wisetcc/static/media/home_page.1d4bfbfeab8c60d5d782.jpg",
+    "static/media/services.jpg": "/wisetcc/static/media/services.b0af0d613da851869d53.jpg",
+    "static/media/contact_page.jpg": "/wisetcc/static/media/contact_page.97dd04b86245bce06196.jpg",
+    "static/media/about_page.jpg": "/wisetcc/static/media/about_page.3316127a13d5df096732.jpg",
+    "static/media/wisetcc_logo.png": "/wisetcc/static/media/wisetcc_logo.1c5254ec3a453fb9b73e.png",
+    "static/media/product-test-image-reverse.JPG": "/wisetcc/static/media/product-test-image-reverse.b4d5b1634e9de411820b.JPG",
+    "static/media/services_temple_visits.jpeg": "/wisetcc/static/media/services_temple_visits.65d3846a45c8cc276a2e.jpeg",
+    "static/media/services_consultation.jpg": "/wisetcc/static/media/services_consultation.c2072fa886a24f53d026.jpg",
+    "static/media/product-test-image.JPG": "/wisetcc/static/media/product-test-image.282ed50168199057f322.JPG",
+    "static/media/services_events.jpeg": "/wisetcc/static/media/services_events.3cff43fc663388272cab.jpeg",
+    "index.html": "/wisetcc/index.html",
+    "main.55635c89.css.map": "/wisetcc/static/css/main.55635c89.css.map",
+    "main.036d92d5.js.map": "/wisetcc/static/js/main.036d92d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55635c89.css",
+    "static/js/main.036d92d5.js"
+  ]
+}
