@@ -88,9 +88,9 @@ function AppointmentPage() {
         consultationPurpose,
         message,
       };
-      const url = "/api/appointments"; // Check if this URL matches the backend route
+      const url = "http://localhost:3003/api/appointments"; // Check if this URL matches the backend route
       console.log("Sending POST request to:", url); // Log the URL
-      const response = await axios.post("/api/appointments", appointmentData);
+      const response = await axios.post("http://localhost:3003//api/appointments", appointmentData);
       console.log("Appointment booked:", response.data);
     } catch (error) {
       setError(error.message);
